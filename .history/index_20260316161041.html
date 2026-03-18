@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="探索中国八大城市的地道美食，包括北京烤鸭、成都火锅、广州早茶、上海小笼包、西安肉夹馍等中华特色美食">
+    <meta name="keywords" content="中国美食，城市美食，北京烤鸭，成都火锅，广州早茶，上海小笼包，西安美食">
+    <title>中国城市美食导航</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🍜 中国城市美食导航</h1>
+            <p class="subtitle">探索中国八大城市的地道美食</p>
+        </div>
+    </header>
+
+    <nav class="city-nav" role="tablist" aria-label="城市筛选">
+        <button class="nav-btn active" data-city="all" role="tab" aria-selected="true">全部</button>
+        <button class="nav-btn" data-city="beijing" role="tab" aria-selected="false">北京</button>
+        <button class="nav-btn" data-city="chengdu" role="tab" aria-selected="false">成都</button>
+        <button class="nav-btn" data-city="chongqing" role="tab" aria-selected="false">重庆</button>
+        <button class="nav-btn" data-city="guangzhou" role="tab" aria-selected="false">广州</button>
+        <button class="nav-btn" data-city="hangzhou" role="tab" aria-selected="false">杭州</button>
+        <button class="nav-btn" data-city="shanghai" role="tab" aria-selected="false">上海</button>
+        <button class="nav-btn" data-city="wuhan" role="tab" aria-selected="false">武汉</button>
+        <button class="nav-btn" data-city="xian" role="tab" aria-selected="false">西安</button>
+    </nav>
+
+    <main class="container">
+        <div class="food-grid" id="foodGrid">
+            <!-- 北京美食 -->
+            <div class="food-card" data-city="beijing">
+                <div class="food-image" style="background-color: #c41e3a;">🦆</div>
+                <div class="food-info">
+                    <h3>北京烤鸭</h3>
+                    <p class="city-tag">北京</p>
+                    <p class="description">色泽红润，皮脆肉嫩，被誉为"天下美味"</p>
+                    <div class="tags">
+                        <span class="tag">名菜</span>
+                        <span class="tag">烤制</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="beijing">
+                <div class="food-image" style="background-color: #8b4513;">🥟</div>
+                <div class="food-info">
+                    <h3>老北京炸酱面</h3>
+                    <p class="city-tag">北京</p>
+                    <p class="description">手工擀面配秘制炸酱，老北京的传统味道</p>
+                    <div class="tags">
+                        <span class="tag">主食</span>
+                        <span class="tag">传统</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="beijing">
+                <div class="food-image" style="background-color: #cd853f;">🍲</div>
+                <div class="food-info">
+                    <h3>铜锅涮肉</h3>
+                    <p class="city-tag">北京</p>
+                    <p class="description">清汤铜锅，鲜嫩羊肉，蘸麻酱食用</p>
+                    <div class="tags">
+                        <span class="tag">火锅</span>
+                        <span class="tag">冬季</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 成都美食 -->
+            <div class="food-card" data-city="chengdu">
+                <div class="food-image" style="background-color: #c41e1e;">🌶️</div>
+                <div class="food-info">
+                    <h3>麻婆豆腐</h3>
+                    <p class="city-tag">成都</p>
+                    <p class="description">麻、辣、烫、香、酥、嫩、鲜、活八字箴言</p>
+                    <div class="tags">
+                        <span class="tag">川菜</span>
+                        <span class="tag">麻辣</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="chengdu">
+                <div class="food-image" style="background-color: #8b0000;">🍢</div>
+                <div class="food-info">
+                    <h3>串串香</h3>
+                    <p class="city-tag">成都</p>
+                    <p class="description">竹签串菜，烫煮食用，成都特色小吃</p>
+                    <div class="tags">
+                        <span class="tag">小吃</span>
+                        <span class="tag">麻辣</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="chengdu">
+                <div class="food-image" style="background-color: #a52a2a;">🥘</div>
+                <div class="food-info">
+                    <h3>回锅肉</h3>
+                    <p class="city-tag">成都</p>
+                    <p class="description">川菜之首，肥而不腻，香气浓郁</p>
+                    <div class="tags">
+                        <span class="tag">川菜</span>
+                        <span class="tag">家常菜</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 广州美食 -->
+            <div class="food-card" data-city="guangzhou">
+                <div class="food-image" style="background-color: #daa520;">🥟</div>
+                <div class="food-info">
+                    <h3>虾饺</h3>
+                    <p class="city-tag">广州</p>
+                    <p class="description">皮薄馅足，虾仁鲜美，早茶必备</p>
+                    <div class="tags">
+                        <span class="tag">点心</span>
+                        <span class="tag">早茶</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="guangzhou">
+                <div class="food-image" style="background-color: #d2691e;">🍖</div>
+                <div class="food-info">
+                    <h3>烧鹅</h3>
+                    <p class="city-tag">广州</p>
+                    <p class="description">皮脆肉嫩，色泽金红，广式烧腊代表</p>
+                    <div class="tags">
+                        <span class="tag">烧腊</span>
+                        <span class="tag">名菜</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="guangzhou">
+                <div class="food-image" style="background-color: #f4a460;">🍜</div>
+                <div class="food-info">
+                    <h3>云吞面</h3>
+                    <p class="city-tag">广州</p>
+                    <p class="description">竹升面配上鲜虾云吞，汤清味美</p>
+                    <div class="tags">
+                        <span class="tag">面食</span>
+                        <span class="tag">汤品</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 上海美食 -->
+            <div class="food-card" data-city="shanghai">
+                <div class="food-image" style="background-color: #8b0000;">🥟</div>
+                <div class="food-info">
+                    <h3>小笼包</h3>
+                    <p class="city-tag">上海</p>
+                    <p class="description">皮薄汁多，鲜香四溢，上海标志性美食</p>
+                    <div class="tags">
+                        <span class="tag">点心</span>
+                        <span class="tag">汤包</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="shanghai">
+                <div class="food-image" style="background-color: #a0522d;">🍖</div>
+                <div class="food-info">
+                    <h3>红烧肉</h3>
+                    <p class="city-tag">上海</p>
+                    <p class="description">本帮经典，肥瘦相间，甜咸适口</p>
+                    <div class="tags">
+                        <span class="tag">本帮菜</span>
+                        <span class="tag">家常菜</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="shanghai">
+                <div class="food-image" style="background-color: #cd853f;">🍜</div>
+                <div class="food-info">
+                    <h3>葱油拌面</h3>
+                    <p class="city-tag">上海</p>
+                    <p class="description">葱香浓郁，面条劲道，简单却美味</p>
+                    <div class="tags">
+                        <span class="tag">面食</span>
+                        <span class="tag">小吃</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 西安美食 -->
+            <div class="food-card" data-city="xian">
+                <div class="food-image" style="background-color: #8b4513;">🥙</div>
+                <div class="food-info">
+                    <h3>肉夹馍</h3>
+                    <p class="city-tag">西安</p>
+                    <p class="description">腊汁肉夹入白吉馍，陕西特色小吃</p>
+                    <div class="tags">
+                        <span class="tag">小吃</span>
+                        <span class="tag">面食</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="xian">
+                <div class="food-image" style="background-color: #daa520;">🍜</div>
+                <div class="food-info">
+                    <h3>羊肉泡馍</h3>
+                    <p class="city-tag">西安</p>
+                    <p class="description">自己掰馍，加入羊肉高汤，香气扑鼻</p>
+                    <div class="tags">
+                        <span class="tag">面食</span>
+                        <span class="tag">汤品</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="xian">
+                <div class="food-image" style="background-color: #c41e3a;">🍜</div>
+                <div class="food-info">
+                    <h3>Biángbiáng面</h3>
+                    <p class="city-tag">西安</p>
+                    <p class="description">宽如裤带，配上辣椒油和臊子，口感劲道</p>
+                    <div class="tags">
+                        <span class="tag">面食</span>
+                        <span class="tag">特色</span>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- 重庆美食 -->
+            <div class="food-card" data-city="chongqing">
+                <div class="food-image" style="background-color: #c41e1e;">🍲</div>
+                <div class="food-info">
+                    <h3>重庆火锅</h3>
+                    <p class="city-tag">重庆</p>
+                    <p class="description">麻辣鲜香，牛油锅底，食材丰富</p>
+                    <div class="tags">
+                        <span class="tag">火锅</span>
+                        <span class="tag">麻辣</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="chongqing">
+                <div class="food-image" style="background-color: #8b0000;">🍜</div>
+                <div class="food-info">
+                    <h3>重庆小面</h3>
+                    <p class="city-tag">重庆</p>
+                    <p class="description">碱水面条，配上辣椒油和花椒，麻辣鲜香</p>
+                    <div class="tags">
+                        <span class="tag">面食</span>
+                        <span class="tag">早餐</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="chongqing">
+                <div class="food-image" style="background-color: #a52a2a;">🥘</div>
+                <div class="food-info">
+                    <h3>酸辣粉</h3>
+                    <p class="city-tag">重庆</p>
+                    <p class="description">红薯粉条，酸辣开胃，街头小吃</p>
+                    <div class="tags">
+                        <span class="tag">小吃</span>
+                        <span class="tag">酸辣</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 杭州美食 -->
+            <div class="food-card" data-city="hangzhou">
+                <div class="food-image" style="background-color: #8b4513;">🐟</div>
+                <div class="food-info">
+                    <h3>西湖醋鱼</h3>
+                    <p class="city-tag">杭州</p>
+                    <p class="description">选用草鱼，糖醋调味，色泽红亮，酸甜鲜嫩</p>
+                    <div class="tags">
+                        <span class="tag">浙菜</span>
+                        <span class="tag">名菜</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="hangzhou">
+                <div class="food-image" style="background-color: #cd853f;">🍖</div>
+                <div class="food-info">
+                    <h3>东坡肉</h3>
+                    <p class="city-tag">杭州</p>
+                    <p class="description">肥瘦相间，色泽红亮，肥而不腻，入口即化</p>
+                    <div class="tags">
+                        <span class="tag">浙菜</span>
+                        <span class="tag">名菜</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="hangzhou">
+                <div class="food-image" style="background-color: #daa520;">🍤</div>
+                <div class="food-info">
+                    <h3>龙井虾仁</h3>
+                    <p class="city-tag">杭州</p>
+                    <p class="description">选用龙井新茶，虾仁鲜嫩，茶香清雅</p>
+                    <div class="tags">
+                        <span class="tag">浙菜</span>
+                        <span class="tag">名菜</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 武汉美食 -->
+            <div class="food-card" data-city="wuhan" data-food-id="hot-dry-noodles">
+                <div class="food-image" style="background-color: #8b4513;">🍜</div>
+                <div class="food-info">
+                    <h3>热干面</h3>
+                    <p class="city-tag">武汉</p>
+                    <p class="description">碱水面条，芝麻酱调味，香气浓郁，武汉早餐首选</p>
+                    <div class="tags">
+                        <span class="tag">面食</span>
+                        <span class="tag">早餐</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="wuhan" data-food-id="three-delicious-bean-curd">
+                <div class="food-image" style="background-color: #cd853f;">🥟</div>
+                <div class="food-info">
+                    <h3>三鲜豆皮</h3>
+                    <p class="city-tag">武汉</p>
+                    <p class="description">糯米包裹香菇、火腿、虾仁，外皮酥脆</p>
+                    <div class="tags">
+                        <span class="tag">小吃</span>
+                        <span class="tag">早餐</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-city="wuhan" data-food-id="jingwu-duck-neck">
+                <div class="food-image" style="background-color: #c41e1e;">🍲</div>
+                <div class="food-info">
+                    <h3>精武鸭脖</h3>
+                    <p class="city-tag">武汉</p>
+                    <p class="description">卤制入味，麻辣鲜香，武汉特色卤味</p>
+                    <div class="tags">
+                        <span class="tag">卤味</span>
+                        <span class="tag">小吃</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 食物详情模态框 -->
+    <div id="foodModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="关闭">&times;</button>
+            <div class="modal-header">
+                <div class="modal-food-image" id="modalImage"></div>
+                <h2 id="modalTitle" class="modal-title"></h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info-section">
+                    <h3 class="section-title">简介</h3>
+                    <p id="modalDescription" class="modal-description"></p>
+                </div>
+                <div class="modal-info-section">
+                    <h3 class="section-title">产地</h3>
+                    <p id="modalCity" class="modal-city"></p>
+                </div>
+                <div class="modal-info-section">
+                    <h3 class="section-title">特点</h3>
+                    <div id="modalTags" class="modal-tags"></div>
+                </div>
+                <div class="modal-info-section">
+                    <h3 class="section-title">详细介绍</h3>
+                    <p id="modalDetail" class="modal-detail"></p>
+                </div>
+                <div class="modal-info-section">
+                    <h3 class="section-title">推荐店铺</h3>
+                    <ul id="modalShops" class="modal-shops"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>🍜 中国城市美食导航 &copy; <span id="currentYear">2026</span></p>
+            <p>探索中华美食文化</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // 动态更新年份
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

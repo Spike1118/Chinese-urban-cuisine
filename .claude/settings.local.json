@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(curl:*)",
+      "Bash(npx:*)",
+      "Bash(node:*)",
+      "Bash(ls:*)",
+      "Bash(pnpm add:*)",
+      "Bash(claude:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)"
+    ]
+  },
+  "model": "claude-sonnet-4-6",
+  "language": "chinese"
+}

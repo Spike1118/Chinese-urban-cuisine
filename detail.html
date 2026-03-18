@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="中国城市美食导航 - 美食详情">
+    <title>美食详情 - 中国城市美食导航</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="back-btn" aria-label="返回首页">
+                ← 返回首页
+            </a>
+            <h1 id="foodName"></h1>
+            <p class="subtitle" id="foodCity"></p>
+        </div>
+    </header>
+
+    <!-- 面包屑导航 -->
+    <nav class="breadcrumb" aria-label="面包屑导航">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li><a href="index.html">首页</a></li>
+                <li><span aria-hidden="true">›</span></li>
+                <li id="breadcrumbCity" aria-current="page"></li>
+            </ol>
+        </div>
+    </nav>
+
+    <main class="detail-container">
+        <!-- 食物大图展示 -->
+        <div class="food-hero">
+            <div class="food-image-large" id="foodImage"></div>
+        </div>
+
+        <!-- 主要内容 -->
+        <div class="detail-content">
+            <!-- 左侧：特色介绍 -->
+            <section class="detail-section">
+                <h2 class="section-title">✨ 特色介绍</h2>
+                <div class="detail-card">
+                    <p class="detail-text" id="foodDescription"></p>
+                </div>
+            </section>
+
+            <!-- 详细介绍 -->
+            <section class="detail-section">
+                <h2 class="section-title">📖 详细介绍</h2>
+                <div class="detail-card">
+                    <p class="detail-text-long" id="foodDetail"></p>
+                </div>
+            </section>
+
+            <!-- 特点标签 -->
+            <section class="detail-section">
+                <h2 class="section-title">🏷️ 特点标签</h2>
+                <div class="tags-container" id="foodTags"></div>
+            </section>
+
+            <!-- 推荐店铺 -->
+            <section class="detail-section">
+                <h2 class="section-title">🏪 推荐店铺</h2>
+                <div class="shops-grid" id="foodShops"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>🍜 中国城市美食导航 &copy; <span id="currentYear">2026</span></p>
+            <p>探索中华美食文化</p>
+        </div>
+    </footer>
+
+    <script type="module" src="detail.js"></script>
+</body>
+</html>
