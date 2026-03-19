@@ -22,13 +22,18 @@ body {
   line-height: 1.6;
 }
 
+/* 优化滚动条体验 */
+html {
+  scrollbar-gutter: stable;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Custom scrollbar */
+/* 自定义滚动条 */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -46,7 +51,7 @@ body {
   background: rgba(255, 255, 255, 0.5);
 }
 
-/* Print styles */
+/* 打印样式 */
 @media print {
   body {
     background: white;
@@ -58,7 +63,7 @@ body {
   }
 }
 
-/* Reduced motion */
+/* 减少动画 */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -67,4 +72,17 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #f0f0f0;
+  }
+}
+
+/* 焦点可见性 */
+:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
 }
